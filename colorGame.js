@@ -50,7 +50,7 @@ resetButton.addEventListener("click", function(){
    for(var i = 0; i < squares.length; i++){
        squares[i].style.backgroundColor = colors[i];
    }
-   h1.style.backgroundColor = "#232323";
+   h1.style.backgroundColor = "steelblue";
    resetButton.textContent = "New Colors";
 });
 
@@ -65,7 +65,6 @@ for (var i = 0; i < squares.length; i++){
         //grab color of clicked square
         var clickedColor = this.style.backgroundColor;
         //compare color to pickedColor
-        console.log(clickedColor, pickedColor);
         if (clickedColor === pickedColor){
             messageDisplay.textContent = "Correct!";
             resetButton.textContent = "Play Again?";
